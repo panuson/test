@@ -6,8 +6,8 @@ def index(request):
     bl = Blog.objects.all()
     return render(request,"index.html",{"bl":bl})
 
-def about(request):
-    return render(request,"about.html")
+def add(request):
+    return render(request,"add.html")
 
 def delete(request,id):
     bl = Blog.objects.filter(id=id)
